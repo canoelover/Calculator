@@ -100,6 +100,8 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="Settings.bundle\More.plist" />
+    <None Include="Settings.bundle\Root.plist" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -122,5 +124,7 @@
     <BundleResource Include="Resources\images\equalsign.jpg" />
     <BundleResource Include="Resources\images\multiplicationsign.jpg" />
     <BundleResource Include="Resources\images\subtractionsign.jpg" />
+    <BundleResource Include="Settings.bundle\rabbit.png" />
+    <BundleResource Include="Settings.bundle\turtle.png" />
   </ItemGroup>
 </Project>

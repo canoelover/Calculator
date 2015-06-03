@@ -65,3 +65,7 @@
 /Users/markkoble/Projects/Week9/Beta/Calculator/Calculator/bin/iPhoneSimulator/Debug/Calculator.exe
 /Users/markkoble/Projects/Week9/Beta/Calculator/Calculator/obj/iPhoneSimulator/Debug/Calculator.exe
 /Users/markkoble/Projects/Week9/Beta/Calculator/Calculator/obj/iPhoneSimulator/Debug/Calculator.exe.mdb
+/Users/markkoble/Projects/Week9/Beta/Calculator/Calculator/obj/iPhoneSimulator/Debug/ibtool/MainStoryboard.storyboardc/412-view-420.nib
+/Users/markkoble/Projects/Week9/Beta/Calculator/Calculator/obj/iPhoneSimulator/Debug/ibtool/MainStoryboard.storyboardc/UIViewController-408.nib
+/Users/markkoble/Projects/Week9/Beta/Calculator/Calculator/obj/iPhoneSimulator/Debug/Settings.bundle/rabbit.png
+/Users/markkoble/Projects/Week9/Beta/Calculator/Calculator/obj/iPhoneSimulator/Debug/Settings.bundle/turtle.png

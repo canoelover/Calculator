@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Display Mode</string>
+			<key>Titles</key>
+			<array>
+				<string>Floating Point</string>
+				<string>Fixed Point</string>
+				<string>Exponential</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>Floating Point</string>
+				<string>Fixed Point</string>
+				<string>Exponential</string>
+			</array>
+			<key>Key</key>
+			<string>displaymode</string>
+			<key>DefaultValue</key>
+			<string>Fixed Point</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Background</string>
+			<key>Key</key>
+			<string>background</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Font Size</string>
+			<key>Key</key>
+			<string>fontsize</string>
+			<key>DefaultValue</key>
+			<string>15</string>
+			<key>Titles</key>
+			<array>
+				<string>15</string>
+				<string>16</string>
+				<string>17</string>
+				<string>18</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>15</string>
+				<string>16</string>
+				<string>17</string>
+				<string>18</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Display Precision</string>
+			<key>Key</key>
+			<string>displayprecision</string>
+			<key>DefaultValue</key>
+			<string>0</string>
+			<key>Titles</key>
+			<array>
+				<string>0</string>
+				<string>1</string>
+				<string>2</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>0</string>
+				<string>1</string>
+				<string>2</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Number System</string>
+			<key>Key</key>
+			<string>numbersystem</string>
+			<key>DefaultValue</key>
+			<string>Yes</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>
