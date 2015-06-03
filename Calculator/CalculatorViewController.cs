@@ -8,6 +8,13 @@ namespace Calculator
 {
 	public partial class CalculatorViewController : UIViewController
 	{
+		NSObject observer = null;
+		private string _fontSize = null;
+		private string _displayPrecision = null;
+		private string _displayMode = null;
+		private bool _background = true;
+		private bool _numberSystem = false;
+
 		public CalculatorViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -25,6 +32,7 @@ namespace Calculator
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
+
 
 			var c = new Calculate();
 			 
@@ -116,6 +124,16 @@ namespace Calculator
 		public override void ViewWillAppear (bool animated)
 		{
 			base.ViewWillAppear (animated);
+
+			// Update the values shown in view 1 from the StandardUserDefaults
+			RefreshFields ();
+
+			// Subscribe to the applicationWillEnterForeground notification
+			var app = UIApplication.SharedApplication;
+			// NSNotificationCenter.DefaultCenter.AddObserver (this, UIApplication.WillEnterForegroundNotification, "ApplicationWillEnterForeground", app);
+			// NSNotificationCenter.DefaultCenter.AddObserver (UIApplication.WillEnterForegroundNotification, ApplicationWillEnterForeground);
+			observer = NSNotificationCenter.DefaultCenter.AddObserver (aName: UIApplication.WillEnterForegroundNotification, notify: ApplicationWillEnterForeground, fromObject: app);
+
 		}
 
 		public override void ViewDidAppear (bool animated)
@@ -132,6 +150,34 @@ namespace Calculator
 		{
 			base.ViewDidDisappear (animated);
 		}
+
+		private void RefreshFields()
+		{
+			var defaults = NSUserDefaults.StandardUserDefaults;
+
+			_fontSize = defaults.StringForKey (Constants.FONT_SIZE);
+			_displayPrecision = defaults.StringForKey (Constants.DISPLAY_PRECISION);
+			_displayMode = defaults.StringForKey (Constants.DISPLAY_MODE);
+			_background = defaults.BoolForKey (Constants.BACKGROUND);
+			_numberSystem = defaults.BoolForKey (Constants.NUMBER_SYSTEM);
+
+			if (_background == true)
+				CalculatorView.BackgroundColor = UIColor.Blue;
+			else
+				CalculatorView.BackgroundColor = UIColor.White;
+			
+		}
+
+
+		// We will subscribe to the applicationWillEnterForeground notification
+		// so that this method is called when that notification occurs
+		private void ApplicationWillEnterForeground(NSNotification notification)
+		{
+			var defaults = NSUserDefaults.StandardUserDefaults;
+			defaults.Synchronize();
+			RefreshFields();			
+		}
+
 
 		#endregion
 	}

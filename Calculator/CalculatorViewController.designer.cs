@@ -20,6 +20,10 @@ namespace Calculator
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIView CalculatorView { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton ClearButton { get; set; }
 
 		[Outlet]
@@ -87,6 +91,10 @@ namespace Calculator
 			if (AddButton != null) {
 				AddButton.Dispose ();
 				AddButton = null;
+			}
+			if (CalculatorView != null) {
+				CalculatorView.Dispose ();
+				CalculatorView = null;
 			}
 			if (ClearButton != null) {
 				ClearButton.Dispose ();

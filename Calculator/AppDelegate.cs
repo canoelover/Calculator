@@ -19,6 +19,27 @@ namespace Calculator
 			get;
 			set;
 		}
+
+
+		public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
+		{
+			// Override point for customization after application launch.
+			// If not required for your application you can safely delete this method
+
+
+			// Set default settings for this app, but only the first time it's run
+			var defaultsDictionary = new NSMutableDictionary();
+			defaultsDictionary.SetValueForKey ((NSString)"Fixed Point", (NSString)Constants.DISPLAY_MODE);
+			defaultsDictionary.SetValueForKey ((NSNumber)1, (NSString)Constants.BACKGROUND);
+			defaultsDictionary.SetValueForKey ((NSString)"15", (NSString)Constants.FONT_SIZE);
+			defaultsDictionary.SetValueForKey ((NSString)"0", (NSString)Constants.DISPLAY_PRECISION);
+			defaultsDictionary.SetValueForKey ((NSNumber)0, (NSString)Constants.NUMBER_SYSTEM);
+
+			NSUserDefaults.StandardUserDefaults.RegisterDefaults (defaultsDictionary);
+
+			return true;
+		}
+
 		
 		// This method is invoked when the application is about to move from active to inactive state.
 		// OpenGL applications should use this method to pause.

@@ -90,7 +90,7 @@
 			<key>Key</key>
 			<string>numbersystem</string>
 			<key>DefaultValue</key>
-			<string>Yes</string>
+			<false/>
 		</dict>
 	</array>
 	<key>StringsTable</key>
