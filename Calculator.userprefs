@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Calculator/Calculator.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.3" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Calculator/AppDelegate.cs" Line="10" Column="95" />
+      <File FileName="Calculator/CalculatorViewController.cs" Line="1" Column="1" />
+      <File FileName="Calculator/Main.cs" Line="17" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

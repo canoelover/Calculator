@@ -1,0 +1,12 @@
+/Users/markkoble/Projects/Week2/Calculator/Calculator/obj/iPhone/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/markkoble/Projects/Week2/Calculator/Calculator/obj/iPhone/Debug/ibtool/LaunchScreen.nib
+/Users/markkoble/Projects/Week2/Calculator/Calculator/obj/iPhone/Debug/ibtool/MainStoryboard.storyboardc/Info.plist
+/Users/markkoble/Projects/Week2/Calculator/Calculator/obj/iPhone/Debug/ibtool/MainStoryboard.storyboardc/UIViewController-vXZ-lx-hvc.nib
+/Users/markkoble/Projects/Week2/Calculator/Calculator/obj/iPhone/Debug/ibtool/MainStoryboard.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib
+/Users/markkoble/Projects/Week2/Calculator/Calculator/obj/iPhone/Debug/actool/partial-info.plist
+/Users/markkoble/Projects/Week2/Calculator/Calculator/obj/iPhone/Debug/actool/asset-manifest.plist
+/Users/markkoble/Projects/Week2/Calculator/Calculator/obj/iPhone/Debug/
+/Users/markkoble/Projects/Week2/Calculator/Calculator/bin/iPhone/Debug/Calculator.exe.mdb
+/Users/markkoble/Projects/Week2/Calculator/Calculator/bin/iPhone/Debug/Calculator.exe
+/Users/markkoble/Projects/Week2/Calculator/Calculator/obj/iPhone/Debug/Calculator.exe
+/Users/markkoble/Projects/Week2/Calculator/Calculator/obj/iPhone/Debug/Calculator.exe.mdb
