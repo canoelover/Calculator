@@ -65,8 +65,19 @@ namespace Calculator
 
 			EqualButton.TouchUpInside += (object sender, EventArgs e) => {	
 				c.BuildExpression("=", true);
-				ExpressionLabel.Text = c.RunningBal.ToString();
+//				ExpressionLabel.Text = c.RunningBal.ToString();
+				if (_numberSystem == true) {
+//					int decValue = Convert.ToInt32(c.RunningBal.ToString(), 16);
+					ExpressionLabel.Text = c.RunningBal.ToString();
+				} else {
+					int runningBal = (int)c.RunningBal;
+					string hexValue = runningBal.ToString("X");
+					ExpressionLabel.Text = hexValue;
+				}
+					
 				c.Expression = c.RunningBal.ToString();
+
+
 			};
 
 			ZeroButton.TouchUpInside += (object sender, EventArgs e) => {
@@ -165,6 +176,7 @@ namespace Calculator
 				CalculatorView.BackgroundColor = UIColor.Blue;
 			else
 				CalculatorView.BackgroundColor = UIColor.White;
+				
 			
 		}
 
