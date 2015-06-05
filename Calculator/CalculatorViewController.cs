@@ -173,7 +173,7 @@ namespace Calculator
 			_numberSystem = defaults.BoolForKey (Constants.NUMBER_SYSTEM);
 
 			if (_background == true)
-				CalculatorView.BackgroundColor = UIColor.Blue;
+				CalculatorView.BackgroundColor = UIColor.Red;
 			else
 				CalculatorView.BackgroundColor = UIColor.White;
 				
